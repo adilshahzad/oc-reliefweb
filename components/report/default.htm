@@ -1,0 +1,8 @@
+{% set reportRows = __SELF__.reports %}
+
+
+<ul class="collection">
+{% for reportRow in reportRows %}
+    <li class="collection-item"><a href="{{reportRow['fields']['url_alias']}}">{{reportRow['fields']['title']}}</a></li>
+{% endfor %}
+</ul>

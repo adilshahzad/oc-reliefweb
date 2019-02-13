@@ -1,0 +1,8 @@
+{% set disasterRows = __SELF__.rows %}
+
+
+<ul class="collection">
+{% for disasterRow in disasterRows %}
+    <li class="collection-item"><a href="{{disasterRow['fields']['url_alias']}}">{{disasterRow['fields']['name']}}</a></li>
+{% endfor %}
+</ul>
