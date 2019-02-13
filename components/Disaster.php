@@ -1,4 +1,4 @@
-<?php namespace Adil\ReliefWebAPI\Components;
+<?php namespace AdilShahzad\ReliefWebAPI\Components;
 
 use Cms\Classes\ComponentBase;
 

@@ -1,4 +1,4 @@
-<?php namespace Adil\ReliefWebAPI;
+<?php namespace AdilShahzad\ReliefWebAPI;
 
 use Backend;
 use System\Classes\PluginBase;
@@ -19,7 +19,7 @@ class Plugin extends PluginBase
         return [
             'name'        => 'ReliefWeb API',
             'description' => 'Easy to use plugin to fetch available information from https://reliefweb.int',
-            'author'      => 'Adil',
+            'author'      => 'Adil Shahzad',
             'icon'        => 'icon-leaf'
         ];
     }
@@ -53,8 +53,8 @@ class Plugin extends PluginBase
     public function registerComponents()
     {
         return [
-            'Adil\ReliefWebAPI\Components\Disaster' => 'disaster',
-            'Adil\ReliefWebAPI\Components\Report' => 'report',
+            'AdilShahzad\ReliefWebAPI\Components\Disaster' => 'disaster',
+            'AdilShahzad\ReliefWebAPI\Components\Report' => 'report',
         ];
     }
 
@@ -67,7 +67,7 @@ class Plugin extends PluginBase
     {
 
         return [
-            'adil.reliefwebapi.some_permission' => [
+            'adilshahzad.reliefwebapi.some_permission' => [
                 'tab' => 'ReliefWebAPI',
                 'label' => 'Some permission'
             ],
@@ -86,9 +86,9 @@ class Plugin extends PluginBase
         return [
             'reliefwebapi' => [
                 'label'       => 'ReliefWebAPI',
-                'url'         => Backend::url('adil/reliefwebapi/mycontroller'),
+                'url'         => Backend::url('adilshahzad/reliefwebapi/mycontroller'),
                 'icon'        => 'icon-leaf',
-                'permissions' => ['adil.reliefwebapi.*'],
+                'permissions' => ['adilshahzad.reliefwebapi.*'],
                 'order'       => 500,
             ],
         ];
